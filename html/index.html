@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NPC Manager</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sci-scrim" id="scrim">
+	<div class="sci-panel">
+
+		<aside class="sci-side">
+			<div class="sci-brand">
+				<div class="sci-logo" id="brandLogo">
+					<img id="brandLogoImg" alt="" hidden>
+					<span id="brandTag">SN</span>
+				</div>
+				<div class="sci-brand-txt">
+					<div class="sci-brand-title" id="brandTitle">NPC Manager</div>
+					<div class="sci-brand-sub" id="brandSub">SciDev</div>
+				</div>
+			</div>
+
+			<nav class="sci-nav" id="nav">
+				<button class="sci-nav-i active" data-page="density">
+					<svg class="sci-ico" viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg>
+					<span>Density</span>
+				</button>
+				<button class="sci-nav-i" data-page="systems">
+					<svg class="sci-ico" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+					<span>Ambient systems</span>
+				</button>
+				<button class="sci-nav-i" data-page="sweep">
+					<svg class="sci-ico" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2"/><path d="M12.59 19.41A2 2 0 1 0 14 16H2"/><path d="M17.73 7.73A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+					<span>Sweep</span>
+				</button>
+				<button class="sci-nav-i" data-page="presets">
+					<svg class="sci-ico" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+					<span>Presets</span>
+				</button>
+			</nav>
+
+			<div class="sci-side-foot">
+				<div class="sci-master" id="master">
+					<div class="sci-master-txt">
+						<div class="sci-master-t">Master switch</div>
+						<div class="sci-master-s" id="masterSub">Overriding the game</div>
+					</div>
+					<button class="sci-toggle" id="masterToggle" title="Master switch"></button>
+				</div>
+			</div>
+		</aside>
+
+		<main class="sci-main">
+			<header class="sci-top">
+				<div class="sci-top-l">
+					<div class="sci-top-title" id="pageTitle">Density</div>
+					<div class="sci-top-sub" id="pageSub"></div>
+				</div>
+				<div class="sci-top-r">
+					<span class="sci-pill on" id="statusPill"><span class="dot"></span>Active</span>
+					<button class="sci-icon-btn sci-close" id="closeBtn" title="Close">
+						<svg class="sci-ico" viewBox="0 0 24 24"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+					</button>
+				</div>
+			</header>
+
+			<section class="sci-content" id="content"></section>
+		</main>
+
+	</div>
+</div>
+
+<div class="sci-toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
